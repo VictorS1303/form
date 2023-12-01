@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <title>Form Exercise with Github and Netlify</title>
+</head>
+
+<body>
+    <div class="container form-container">
+        <form action="thanks.html" name="contact" class="form contact-form padding-xl" id="contact_form" netlify>
+            <div class="margin-x_bl">
+                <label for="first_name" class="d_block">First Name</label>
+                <input type="text" name="first_name" class="input first-name-input" id="first_name">
+            </div>
+
+            <div class="margin-x_bl">
+                <label for="last_name" class="d_block">Last Name</label>
+                <input type="text" name="last_name" class="input last-name-input" id="last_name">
+            </div>
+
+            <div class="margin-x_bl">
+                <label for="email" class="d_block">E-mail</label>
+                <input type="text" name="email" class="input last-name-input" id="email">
+            </div>
+
+            <div class="margin-x_bl">
+                <select name="position" class="select position-select" id="position_select">
+                    <option value="teacher">Teacher</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea name="message" class="input message-input padding-m" id="message_input"
+                    placeholder="Besked"></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn d_block margin-x_tl " id="submit_btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
